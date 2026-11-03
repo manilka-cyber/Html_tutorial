@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Google Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #673ab7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #512da8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <!-- Replace YOUR_FORM_ID_HERE with your actual Google Form ID string -->
+    <form action="https://google.com" method="POST" target="_self">
+        
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <!-- Replace YOUR_ENTRY_ID_HERE with your form's exact entry ID number -->
+            <input type="text" id="name" name="entry.YOUR_ENTRY_ID_HERE" required>
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</div>
+
+</body>
+</html>
